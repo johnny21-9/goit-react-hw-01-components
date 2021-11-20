@@ -9,8 +9,6 @@ import FriendsList from './Components/FriendsList/FriendsList';
 import transactions from './sources/transactions.json';
 import TransactionHistory from './Components/TransactionHistory/TransactionHistory';
 
-const StatsData = statsData;
-
 function App() {
   return (
     <React.Fragment>
@@ -21,8 +19,8 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <StatsList title="Upload stats" data={StatsData} />
-      <StatsList data={StatsData} />
+      <StatsList title="Upload stats" data={statsData} />
+      <StatsList data={statsData} />
       <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
     </React.Fragment>
